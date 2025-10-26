@@ -1,0 +1,63 @@
+/* Simonetta Font */
+@font-face {
+  font-family: 'Simonetta';
+  src: url('assets/fonts/Simonetta/Simonetta/Simonetta-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Simonetta';
+  src: url('assets/fonts/Simonetta/Simonetta/Simonetta-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Simonetta';
+  src: url('assets/fonts/Simonetta/Simonetta/Simonetta-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Simonetta';
+  src: url('assets/fonts/Simonetta/Simonetta/Simonetta-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Previne scroll horizontal */
+}
+
+body {
+  font-family: 'Simonetta';
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Previne zoom em inputs em mobile */
+input, textarea, select {
+  font-size: 16px;
+}
+
+/* Prevent text selection on mobile */
+@media (max-width: 768px) {
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+

@@ -1,0 +1,226 @@
+/* Mobile Warning Styles */
+.mobile-warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.warning-content {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.warning-content .icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.warning-content h1 {
+  color: #764ba2;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.warning-content p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.warning-content .small-text {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção 1 - Background Image em tela cheia */
+.section-1 {
+  height: calc(90vh);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-1-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 589px;
+  object-fit: contain; /* Mantém proporção original */
+  object-position: top left;
+}
+
+/* Logo na primeira seção */
+.section-1 .logo {
+  width: 153px;
+  position: absolute;
+  bottom: 20%;
+  left: 42%;
+  transform: translateX(-50%);
+}
+
+.section-1 .logo img {
+  width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: auto;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Quote text */
+.section-1 .wedding-quote {
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #546129;
+  font-size: 10px;
+  font-style: italic;
+  font-family: "Simonetta";
+  text-align: center;
+  padding: 0 20px;
+  max-width: 100%;
+  width: 95%;
+  line-height: 1.4;
+}
+
+/* Verse reference */
+.section-1 .wedding-verse {
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #546129;
+  font-size: 7px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 280px;
+}
+
+/* Blessing Section */
+.section-blessing {
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-blessing .blessing-box {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.section-blessing .blessing-box p {
+  color: #546129;
+  font-size: 15px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+}
+
+.section-blessing .parents-names {
+  margin-top: 6%;
+}
+
+.section-blessing .parents-names p {
+  color: #546129;
+  font-size: 15px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+}
+
+.section-blessing .section-2-logo {
+  margin-top: 10%;
+}
+
+.section-blessing .section-2-logo img {
+  width: 140px;
+  height: auto;
+  max-width: 200px;
+}
+
+.section-blessing .invitation-text {
+  margin-top: 7%;
+}
+
+.section-blessing .invitation-text p {
+  color: #546129;
+  font-size: 14px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+}
+
+.section-blessing .date-text {
+  margin-top: 14%;
+  margin-bottom: 10%;
+}
+
+.section-blessing .date-text p {
+  color: #546129;
+  font-size: 16px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+}
+
+.section-blessing .time-text {
+  margin-top: 10%;
+}
+
+.section-blessing .time-text p {
+  color: #546129;
+  font-size: 14px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+.section-blessing .venue-text {
+  margin-top: 10%;
+}
+
+.section-blessing .venue-text p {
+  color: #546129;
+  font-size: 14px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin: 0;
+}
+

@@ -1,0 +1,59 @@
+<!-- Mobile Warning Message -->
+<div *ngIf="!isMobile" class="mobile-warning">
+  <div class="warning-content">
+    <div class="icon">📱</div>
+    <h1>Convite de Casamento</h1>
+    <p>Este convite está otimizado para dispositivos móveis.</p>
+    <p>Por favor, abra este convite no seu telemóvel ou tablet.</p>
+    <p class="small-text">Obrigado pela sua compreensão! 💕</p>
+  </div>
+</div>
+
+<!-- Wedding Invitation Content -->
+<div *ngIf="isMobile" class="landing-page">
+  <!-- Primeira Seção - Background Image em tela cheia -->
+  <section class="section section-1">
+    <img src="/assets/seccao-1.svg" alt="Background" class="section-1-bg">
+    <div class="logo">
+      <img src="/assets/seccao-1-logo.svg" alt="Logo">
+    </div>
+    <p class="wedding-quote">"Portanto, deixará o homem o seu pai e a sua mãe, e unir-se-á à sua mulher, e serão ambos uma só carne. Assim, no amor e na união, celebramos a bênção de nos tornarmos um só, guiados pela graça de Deus e pelo compromisso de cuidar, respeitar e amar um ao outro para sempre."</p>
+    <p class="wedding-verse">Mateus 19:5; Efésios 5:31.</p>
+  </section>
+  
+  <!-- Seção Blessing -->
+  <section class="section section-blessing">
+    <div class="blessing-box">
+      <p>Com a bênção de seus pais</p>
+    </div>
+    <div class="parents-names">
+      <p>Hugo Lopes e Yochida Lopes <br />
+      Carlos da Silva e Lia da Silva</p>
+    </div>
+    <div class="section-2-logo">
+      <img src="/assets/seccao-2-logo.png" alt="Logo Seção 2">
+    </div>
+    <div class="invitation-text">
+      <p>"Convidam-lhe para celebrar o seu matrimônio"</p>
+    </div>
+    <div class="date-text">
+      <p>SEXTA FEIRA | 18.SETEMBRO.2026</p>
+    </div>
+    <div class="time-text">
+      <p>16 Horas</p>
+    </div>
+    <div class="venue-text">
+      <p>BEULD THE VENUE<br />
+      Robertson, Western Cape 6705<br />
+      Capetown, África do Sul</p>
+    </div>
+  </section>
+  
+  <!-- Seção 2 -->
+  <section class="section section-2">
+    <!-- Conteúdo da seção 2 aqui -->
+  </section>
+  
+  <!-- Mais seções... -->
+</div>
+
