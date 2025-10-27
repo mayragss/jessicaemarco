@@ -193,7 +193,7 @@
 
 .section-blessing .date-text p {
   color: #546129;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Simonetta", serif;
   text-align: center;
   margin: 0;
@@ -205,22 +205,94 @@
 
 .section-blessing .time-text p {
   color: #546129;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Simonetta", serif;
   text-align: center;
   margin: 0;
-  font-weight: bold;
 }
 
 .section-blessing .venue-text {
-  margin-top: 10%;
+  margin-top: 1%;
 }
 
 .section-blessing .venue-text p {
   color: #546129;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Simonetta", serif;
   text-align: center;
+  margin: 0;
+}
+
+/* Section 3 with Icons */
+.section-3 {
+  position: relative;
+  overflow: hidden;
+  min-height: 528px;
+}
+
+.section-3-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 621px;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.icons-section {
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  position: relative;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.icons-section .icon {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.icon-text {
+  color: #546129;
+  font-size: 6px;
+  font-family: "Simonetta", serif;
+  text-align: center;
+  margin-top: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text {
+  margin-top: 2%;
+  text-align: center;
+  position: relative;
+}
+
+.footer-text p {
+  color: #546129;
+  font-size: 8px;
+  font-family: "Simonetta", serif;
   margin: 0;
 }
 
