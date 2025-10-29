@@ -1,0 +1,30 @@
+<!-- Mobile Warning Message -->
+<div *ngIf="!isMobile" class="mobile-warning">
+  <div class="warning-content">
+    
+    <p>Este convite está otimizado para dispositivos móveis.</p>
+    <p>Por favor, abra este convite no seu telemóvel ou tablet.</p>
+    <p class="small-text">Obrigado pela sua compreensão! 💕</p>
+  </div>
+</div>
+
+<div *ngIf="isMobile" class="acomodacoes-page">
+  <div class="acomodacoes-image">
+    <div class="acomodacoes-logo">
+      <a routerLink="/" class="icon-link">
+        <img src="/assets/presentes-logo.png" alt="Acomodações Logo">
+      </a>
+    </div>
+    
+    <div class="acomodacoes-header">
+      <p class="acomodacoes-title">- ACOMODAÇÕES PERTO DA CERIMÔNIA/FESTA -</p>
+      
+      <p class="acomodacoes-subtitle">- Utilize os botões para ser direccionado -</p>
+    </div>
+  </div>
+  
+  <div class="acomodacoes-content">
+    <!-- Conteúdo será adicionado depois -->
+  </div>
+</div>
+

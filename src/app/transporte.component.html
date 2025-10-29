@@ -1,0 +1,44 @@
+<!-- Mobile Warning Message -->
+<div *ngIf="!isMobile" class="mobile-warning">
+  <div class="warning-content">
+    
+    <p>Este convite está otimizado para dispositivos móveis.</p>
+    <p>Por favor, abra este convite no seu telemóvel ou tablet.</p>
+    <p class="small-text">Obrigado pela sua compreensão! 💕</p>
+  </div>
+</div>
+
+<div *ngIf="isMobile" class="transporte-page">
+  <div class="transporte-image">
+    <div class="transporte-logo">
+      <a routerLink="/" class="icon-link">
+        <img src="/assets/presentes-logo.png" alt="Transporte Logo">
+      </a>
+    </div>
+    
+    <div class="transporte-header">
+      <p class="transporte-title">- TRANSPORTE -</p>
+      
+      <p class="transporte-subtitle">- Utilize os botões para ser direccionado -</p>
+    </div>
+  </div>
+  
+  <div class="transporte-content">
+    <p class="transporte-text-1">O salão está a 1h30 de distância de carro do centro da cidade.</p>
+    
+    <p class="transporte-text-2">No caso de necessidade de aluguer de transporte (carros individuais ou vans colectivas), recomendamos:</p>
+    
+    <div class="transporte-avis">
+      <img src="/assets/avis.png" alt="AVIS">
+      <a href="https://www.avis.com/" target="_blank" class="transporte-website">WEBSITE</a>
+    </div>
+    
+    <div class="transporte-europcar">
+      <img src="/assets/europcar.png" alt="Europcar">
+      <a href="https://www.europcar.com/" target="_blank" class="transporte-website">WEBSITE</a>
+    </div>
+    
+    <p class="transporte-attention">*Atenção: O aluguer é de custo próprio, não nos responsabilizamos pelo pagamento, disponibilidade ou condições do serviço contratado.</p>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<!-- Mobile Warning Message -->
+<div *ngIf="!isMobile" class="mobile-warning">
+  <div class="warning-content">
+    
+    <p>Este convite está otimizado para dispositivos móveis.</p>
+    <p>Por favor, abra este convite no seu telemóvel ou tablet.</p>
+    <p class="small-text">Obrigado pela sua compreensão! 💕</p>
+  </div>
+</div>
+
+<div *ngIf="isMobile" class="dresscode-page">
+  <a routerLink="/" class="dresscode-logo">
+    <img src="/assets/presentes-logo.png" alt="Dresscode Logo">
+  </a>
+</div>

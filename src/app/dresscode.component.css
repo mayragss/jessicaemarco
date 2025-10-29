@@ -1,0 +1,19 @@
+.dresscode-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6a2e3a;
+  background-image: url('/assets/dresscode.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dresscode-logo img {
+  width: 60px;
+  height: auto;
+  margin-top: 30px;
+}

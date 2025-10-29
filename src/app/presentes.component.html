@@ -1,0 +1,38 @@
+<!-- Mobile Warning Message -->
+<div *ngIf="!isMobile" class="mobile-warning">
+  <div class="warning-content">
+    
+    <p>Este convite está otimizado para dispositivos móveis.</p>
+    <p>Por favor, abra este convite no seu telemóvel ou tablet.</p>
+    <p class="small-text">Obrigado pela sua compreensão! 💕</p>
+  </div>
+</div>
+
+<div *ngIf="isMobile" class="presentes-page">
+  <div class="presentes-logo">
+    <a routerLink="/" class="icon-link">
+      <img src="/assets/presentes-logo.png" alt="Presentes Logo">
+    </a>
+  </div>
+  
+  <p class="presentes-title">- PRESENTES -</p>
+  
+  <div class="presentes-content">
+    <p class="presentes-greeting">Queridos familiares e amigos,</p>
+    
+    <p class="presentes-text">A nossa história já floresceu em um lar cheio de amor e de tudo o que precisamos para viver com conforto. Por isso, não teremos lista de presentes — acreditamos que o nosso verdadeiro presente será ter cada um de vocês a celebrar connosco este momento tão especial.</p>
+    
+    <p class="presentes-text">Caso queiram oferecer-nos algo além da vossa presença, deixamos aqui, com carinho e simplicidade, as nossas coordenadas bancárias (Portugal e Angola). Qualquer gesto será recebido com imensa gratidão e fará parte das memórias desta nova fase das nossas vidas.</p>
+    
+    <p class="presentes-bank">
+      JESSICA ALEXANDRA SILVA FERREIRA LOPES <br />
+      PT: PT50 0033 0000 4570 2668 7020 5<br />
+      AO: AO06 0051 0000 2336 7220 1011 3<br />
+    </p>
+    
+    <div class="presentes-logo-2">
+      <img src="/assets/presentes-logo-2.png" alt="Presentes Logo 2">
+    </div>
+  </div>
+</div>
+

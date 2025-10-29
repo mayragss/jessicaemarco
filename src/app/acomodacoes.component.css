@@ -1,0 +1,81 @@
+.acomodacoes-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6a2e3a;
+  background-image: url('/assets/presentes.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acomodacoes-logo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.acomodacoes-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.acomodacoes-title {
+  font-size: 9px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.acomodacoes-subtitle {
+  font-size: 8px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.acomodacoes-image {
+  margin-top: 0;
+  width: 100%;
+  background-image: url('/assets/acomodacoes.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0;
+  /* padding-bottom: 118px; */
+  min-height: 600px;
+}
+
+.acomodacoes-header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acomodacoes-content {
+  margin-top: 46px;
+  padding: 0 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+

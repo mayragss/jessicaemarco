@@ -267,6 +267,18 @@
   justify-content: flex-start;
 }
 
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-link:hover {
+  text-decoration: none;
+}
+
 .icons-section .icon {
   width: 33px;
   height: 33px;
