@@ -1,9 +1,8 @@
 .presentes-page {
   width: 100%;
   min-height: 100vh;
-  background-color: #6a2e3a;
-  background-image: url('/assets/presentes.png');
-  background-size: contain;
+  background-image: url('/assets/presentes.svg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -17,6 +16,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .presentes-logo img {
@@ -25,12 +26,15 @@
 }
 
 .presentes-title {
-  font-size: 9px;
+  font-size: 11px;
   font-family: "Simonetta", serif;
   color: #fff;
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-top: -7px;
+  position: relative;
+  z-index: 1;
 }
 
 .presentes-content {
@@ -40,10 +44,12 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .presentes-greeting {
-  font-size: 9px;
+  font-size: 12px;
   font-family: "Simonetta", serif;
   color: #fff;
   text-align: center;
@@ -52,13 +58,13 @@
 }
 
 .presentes-text {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Simonetta", serif;
   color: #fff;
   text-align: center;
   margin: 0 0 15px 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1rem;
 }
 
 .presentes-text:last-child {
@@ -66,7 +72,7 @@
 }
 
 .presentes-bank {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Simonetta", serif;
   color: #fff;
   text-align: center;
@@ -79,6 +85,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .presentes-logo-2 img {

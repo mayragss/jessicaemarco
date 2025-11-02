@@ -81,7 +81,7 @@
     position: absolute;
     bottom: 29%;
     left: 49%;
-  transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .section-1 .logo img {

@@ -79,3 +79,63 @@
   text-align: center;
 }
 
+.acomodacoes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: rgba(106, 46, 58, 0.8);
+  color: #fff;
+  font-family: "Simonetta", serif;
+  font-size: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.acomodacoes-table th {
+  background-color: rgb(105, 56, 62);
+  color: #fff;
+  padding: 11px 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  font-size: 7px;
+}
+
+.acomodacoes-table th:last-child {
+  border-right: none;
+}
+
+.acomodacoes-table td {
+  padding: 11px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.acomodacoes-table td:last-child {
+  border-right: none;
+}
+
+.acomodacoes-table tr:hover {
+  background-color: rgba(106, 46, 58, 0.9);
+}
+
+.acomodacoes-table a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.acomodacoes-table a:hover {
+  color: #f0f0f0;
+}
+
+.acomodacoes-note {
+  margin-top: 15px;
+  font-size: 8px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
