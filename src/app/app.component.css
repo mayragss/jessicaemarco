@@ -211,7 +211,7 @@
 
 .section-blessing .time-text p {
   color: #546129;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Simonetta", serif;
   text-align: center;
   margin: 0;
@@ -223,7 +223,7 @@
 
 .section-blessing .venue-text p {
   color: #546129;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Simonetta", serif;
   text-align: center;
   margin: 0;
@@ -233,7 +233,7 @@
 .section-3 {
   position: relative;
   overflow: hidden;
-  min-height: 528px;
+  min-height: 701px;
 }
 
 .section-3-bg {
