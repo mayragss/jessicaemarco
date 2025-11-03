@@ -314,3 +314,46 @@
   margin: 0;
 }
 
+/* Music Control Button */
+.music-control {
+  position: fixed;
+  bottom: 20px;
+  right: 19px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #6a2e3a;
+  border: 2px solid #6a2e3a;
+  color: white;
+  font-size: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.music-control:focus,
+.music-control:active {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.music-control:hover {
+  background-color: #6a2e3a;
+  transform: scale(1.1);
+}
+
+.music-control.playing {
+  background-color: #6a2e3a;
+  border-color: #6a2e3a;
+}
+
+.music-control.playing:hover {
+  background-color: #6a2e3a;
+}
+

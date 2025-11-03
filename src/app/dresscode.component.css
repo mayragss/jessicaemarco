@@ -1,10 +1,9 @@
-.dresscode-page {
+.presentes-page {
   width: 100%;
   min-height: 100vh;
-  background-color: #6a2e3a;
-  background-image: url('/assets/dresscode.png');
-  background-size: contain;
-  background-position: center top;
+  background-image: url('/assets/presentes.svg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -12,8 +11,86 @@
   align-items: center;
 }
 
-.dresscode-logo img {
-  width: 60px;
-  height: auto;
+.presentes-logo {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
+
+.presentes-logo img {
+  width: 97px;
+  height: auto;
+}
+
+.presentes-title {
+  font-size: 11px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: -7px;
+  position: relative;
+  z-index: 1;
+}
+
+.presentes-content {
+  margin-top: 46px;
+  padding: 0 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.presentes-greeting {
+  font-size: 12px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+
+.presentes-text {
+  font-size: 12px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 15px 0;
+  padding: 0;
+  line-height: 1rem;
+}
+
+.presentes-text:last-child {
+  margin-bottom: 0;
+}
+
+.presentes-bank {
+  font-size: 12px;
+  font-family: "Simonetta", serif;
+  color: #fff;
+  text-align: center;
+  margin: 27px 0 0 0;
+  padding: 0;
+}
+
+.presentes-logo-2 {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.presentes-logo-2 img {
+  width: 120px;
+  height: auto;
+}
+
