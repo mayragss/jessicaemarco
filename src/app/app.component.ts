@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -9,15 +9,63 @@ import { CommonModule } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnDestroy {
   isPlaying = false;
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
+  private visibilityChangeHandler?: () => void;
+  private beforeUnloadHandler?: () => void;
+  private windowBlurHandler?: () => void;
 
   ngAfterViewInit() {
     // Tentar tocar música automaticamente ao carregar a página
     setTimeout(() => {
       this.playMusicAutomatically();
     }, 100);
+
+    // Pausar música quando a página perder o foco ou for minimizada
+    this.visibilityChangeHandler = () => {
+      if (document.hidden && this.isPlaying) {
+        this.pauseMusic();
+      }
+    };
+    document.addEventListener('visibilitychange', this.visibilityChangeHandler);
+
+    // Pausar música quando a janela perder o foco
+    this.windowBlurHandler = () => {
+      if (this.isPlaying) {
+        this.pauseMusic();
+      }
+    };
+    window.addEventListener('blur', this.windowBlurHandler);
+
+    // Pausar música quando a página estiver sendo fechada
+    this.beforeUnloadHandler = () => {
+      if (this.isPlaying) {
+        this.pauseMusic();
+      }
+    };
+    window.addEventListener('beforeunload', this.beforeUnloadHandler);
+  }
+
+  ngOnDestroy() {
+    // Remover event listeners quando o componente for destruído
+    if (this.visibilityChangeHandler) {
+      document.removeEventListener('visibilitychange', this.visibilityChangeHandler);
+    }
+    if (this.windowBlurHandler) {
+      window.removeEventListener('blur', this.windowBlurHandler);
+    }
+    if (this.beforeUnloadHandler) {
+      window.removeEventListener('beforeunload', this.beforeUnloadHandler);
+    }
+  }
+
+  pauseMusic() {
+    const audio = this.audioPlayer?.nativeElement;
+    if (audio && this.isPlaying) {
+      audio.pause();
+      this.isPlaying = false;
+    }
   }
 
   playMusicAutomatically() {
