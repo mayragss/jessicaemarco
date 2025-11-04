@@ -233,7 +233,7 @@
 .section-3 {
   position: relative;
   overflow: hidden;
-  min-height: 701px;
+  min-height: 571px;
 }
 
 .section-3-bg {
@@ -271,6 +271,14 @@
   align-items: center;
   height: 100%;
   justify-content: flex-start;
+}
+
+.icon-container {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-link {
@@ -355,5 +363,26 @@
 
 .music-control.playing:hover {
   background-color: #6a2e3a;
+}
+
+.music-control .play-icon {
+  margin-top: -4px;
+  margin-left: 1px;
+}
+
+.music-control .pause-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.music-control .pause-bar {
+  width: 3px;
+  height: 10px;
+  background-color: white;
+  border-radius: 1px;
 }
 

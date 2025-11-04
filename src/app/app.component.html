@@ -1,8 +1,11 @@
 <!-- Music Player -->
 <audio #audioPlayer src="/assets/music.mp3" (ended)="onAudioEnded()" loop autoplay></audio>
 <button class="music-control" (click)="toggleMusic()" [class.playing]="isPlaying">
-  <span *ngIf="!isPlaying">▶</span>
-  <span *ngIf="isPlaying">⏸</span>
+  <span *ngIf="!isPlaying" class="play-icon">▶</span>
+  <span *ngIf="isPlaying" class="pause-icon">
+    <span class="pause-bar"></span>
+    <span class="pause-bar"></span>
+  </span>
 </button>
 
 <router-outlet></router-outlet>
