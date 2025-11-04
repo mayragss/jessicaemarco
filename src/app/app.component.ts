@@ -17,10 +17,21 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   private windowBlurHandler?: () => void;
 
   ngAfterViewInit() {
-    // Tentar tocar música automaticamente ao carregar a página
-    setTimeout(() => {
-      this.playMusicAutomatically();
-    }, 100);
+    // Sincronizar estado do botão com o estado real do áudio
+    const audio = this.audioPlayer?.nativeElement;
+    if (audio) {
+      // Verificar estado inicial
+      this.isPlaying = !audio.paused;
+      
+      // Sincronizar quando o áudio mudar de estado
+      audio.addEventListener('play', () => {
+        this.isPlaying = true;
+      });
+      
+      audio.addEventListener('pause', () => {
+        this.isPlaying = false;
+      });
+    }
 
     // Pausar música quando a página perder o foco ou for minimizada
     this.visibilityChangeHandler = () => {
@@ -83,14 +94,16 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   toggleMusic() {
     const audio = this.audioPlayer?.nativeElement;
     if (audio) {
-      if (this.isPlaying) {
+      if (!audio.paused) {
         audio.pause();
+        this.isPlaying = false;
       } else {
-        audio.play().catch(error => {
+        audio.play().then(() => {
+          this.isPlaying = true;
+        }).catch(error => {
           console.log('Erro ao reproduzir música:', error);
         });
       }
-      this.isPlaying = !this.isPlaying;
     }
   }
 
