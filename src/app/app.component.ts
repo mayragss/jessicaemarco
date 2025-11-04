@@ -14,7 +14,22 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
 
   ngAfterViewInit() {
-    // ViewChild inicializado
+    // Tentar tocar música automaticamente ao carregar a página
+    setTimeout(() => {
+      this.playMusicAutomatically();
+    }, 100);
+  }
+
+  playMusicAutomatically() {
+    const audio = this.audioPlayer?.nativeElement;
+    if (audio) {
+      audio.play().then(() => {
+        this.isPlaying = true;
+      }).catch(error => {
+        // Alguns navegadores bloqueiam autoplay, então ignoramos o erro silenciosamente
+        console.log('Autoplay bloqueado pelo navegador. O usuário pode clicar no botão para tocar.');
+      });
+    }
   }
 
   toggleMusic() {

@@ -1,5 +1,5 @@
 <!-- Music Player -->
-<audio #audioPlayer src="/assets/music.mp3" (ended)="onAudioEnded()" loop></audio>
+<audio #audioPlayer src="/assets/music.mp3" (ended)="onAudioEnded()" loop autoplay></audio>
 <button class="music-control" (click)="toggleMusic()" [class.playing]="isPlaying">
   <span *ngIf="!isPlaying">▶</span>
   <span *ngIf="isPlaying">⏸</span>
