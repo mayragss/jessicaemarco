@@ -366,24 +366,10 @@
   background-color: #6a2e3a;
 }
 
-.music-control .play-icon {
-  margin-top: -4px;
-  margin-left: 1px;
-}
-
+.music-control .play-icon,
 .music-control .pause-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
   width: 100%;
   height: 100%;
-}
-
-.music-control .pause-bar {
-  width: 3px;
-  height: 10px;
-  background-color: white;
-  border-radius: 1px;
+  object-fit: contain;
 }
 
