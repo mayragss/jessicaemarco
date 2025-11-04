@@ -73,6 +73,9 @@
   height: 589px;
   object-fit: cover; /* Cobre toda a área */
   object-position: top center;
+  will-change: opacity;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* Logo na primeira seção */

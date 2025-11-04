@@ -87,6 +87,7 @@
   padding-top: 0;
   /* padding-bottom: 118px; */
   min-height: 703px;
+  will-change: background-image;
 }
 
 .acomodacoes-header {
