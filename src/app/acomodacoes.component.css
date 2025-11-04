@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #6a2e3a;
-  background-image: url('/assets/presentes.png');
+  background-image: url('/assets/presentes.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,13 +206,13 @@
   margin: 0 auto;
   background-color: rgba(106, 46, 58, 0.8);
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Simonetta", serif;
   font-size: 6px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .acomodacoes-table * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Simonetta", serif;
 }
 
 .acomodacoes-table th {
