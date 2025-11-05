@@ -236,6 +236,7 @@
 
 /* Section 3 with Icons */
 .section-3 {
+  margin-top: 79px;
   position: relative;
   overflow: hidden;
   min-height: 571px;
